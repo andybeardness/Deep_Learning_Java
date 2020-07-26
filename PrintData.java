@@ -24,9 +24,7 @@ public class PrintData {
     public static void print(float[][] data, String header) {
         printHeader(header);
         for (int i = 0; i < data.length; i++) {
-            for (int j = 0; j < data[0].length; j++) {
-                System.out.print(data[i][j] + " : ");
-            }
+            for (int j = 0; j < data[0].length; j++) System.out.print(data[i][j] + " : ");
             System.out.println("");
         }
         printBottom();
@@ -34,9 +32,7 @@ public class PrintData {
 
     public static void print(float[] data, String header) {
         printHeader(header);
-        for (int i = 0; i < data.length; i++) {
-            System.out.println(data[i]);
-        }
+        for (int i = 0; i < data.length; i++) System.out.println(data[i]);
         printBottom();
     }
 }
